@@ -75,14 +75,12 @@ function agregar(){
     
 }
 
-function agregarIns(){
-            
+        function agregarIns(){
         var xmlhttp = new XMLHttpRequest();
-        var url="../insert.php?table=t_inscripciones&alumno="+document.getElementById('nalumno').value+"&grupo="+document.getElementById('grupo').value+"&plan="+document.getElementById('plan').value+"&docente="+document.getElementById('docente').value+"&periodo="+document.getElementById('periodo').value+"&pago"=+document.getElementById('pago').value;
-    
+        var url="../insert.php?table=t_inscripciones&alumno="+document.getElementById('alumno').value+"&grupo="+document.getElementById('grupo').value+"&plan="+document.getElementById('plan').value+"&docente="+document.getElementById('docente').value+"&periodo="+document.getElementById('periodo').value+"&pago="+document.getElementById('pagoA').value;    
             xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                document.getElementById('nplan').value="";
+                document.getElementById('pagoA').value=0;
                 alert("Plan agregado exitosamente");
             }else{
 
@@ -93,9 +91,9 @@ function agregarIns(){
 }
 
 function agregarPeriodo(){
-        var xmlhttp = new XMLHttpRequest();
+
+    var xmlhttp = new XMLHttpRequest();
         var url="../insert.php?table=t_periodos&plan="+document.getElementById('plan').value+"&finicio="+document.getElementById('finicio').value+"&ffin="+document.getElementById('ffin').value;
-    
             xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 alert("Periodo agregado exitosamente");

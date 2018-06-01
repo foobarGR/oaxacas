@@ -141,7 +141,7 @@ require('../validaLogIn.php');
                    ?>
                </select>
                <p><label for='pago'>Pago</label></p>
-                <input type='number' name='pago' id='pago'>
+                <input type='number' name='pago' id='pagoA'>
                <p><button name='guardar' onclick="agregarIns();">Guardar</button></p>
             
 <?php } ?>

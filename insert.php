@@ -16,7 +16,19 @@ switch($_GET['table']){
     break;
         
     case 't_inscripciones':
-    $query=$cnx->prepare("DELETE FROM t_inscripciones WHERE idIns=".$_GET['id']);
+    $query=$cnx->prepare("SELECT max(idIns) as max FROM t_inscripciones");
+    $query->execute();
+    $id = json_encode($query->fetchColumn());
+    $id++;
+        
+        $alumno=(int)$_GET['alumno'];
+        $grupo=(int)$_GET['grupo'];
+        $pago=(int)$_GET['pago'];
+        $plan=(int)$_GET['plan'];
+        $docente=(int)$_GET['docente'];
+        $periodo=(int)$_GET['periodo'];
+        
+    $query=$cnx->prepare("INSERT INTO t_inscripciones VALUES($id,$alumno,$grupo,$pago,$plan,$docente,$periodo)");
     $query->execute();
     break;
         
