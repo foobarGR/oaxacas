@@ -104,7 +104,7 @@ require('../validaLogIn.php');
                             <input type="text" name="plan" id="modificar" value="<?php echo $value['idPlan']; ?>">
                             <input type="text" name="docente" id="modificar" value="<?php echo $value['idDocente']; ?>">
                             <input type="text" name="periodo" id="modificar" value="<?php echo $value['idPeriodo']; ?>">
-                            <input type="submit"  name="modificar" value="Modificar">
+                            <input class="btn-modificar" type="submit"  name="modificar" value="Modificar">
                             </form>
                                 
                                 

@@ -133,7 +133,7 @@ require('../validaLogIn.php');
                </select>
                <p><label for='pago'>Pago</label></p>
                 <input type='number' name='pago' id='pagoA' value="<?php echo $pago;?>">
-               <p><button name='guardar' onclick='modificarIns(<?php echo $id;?>);'>Modificar</button></p>
+               <p><button class="btn-modificar" name='guardar' onclick='modificarIns(<?php echo $id;?>);'>Modificar</button></p>
             
 
 
@@ -213,7 +213,7 @@ require('../validaLogIn.php');
                </select>
                <p><label for='pago'>Pago</label></p>
                 <input type='number' name='pago' id='pagoA'>
-               <p><button name='guardar' onclick="agregarIns();">Guardar</button></p>
+               <p><button class="btn-guardar" name='guardar' onclick="agregarIns();">Guardar</button></p>
             
 
        </section>

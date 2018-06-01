@@ -315,3 +315,15 @@ function modificarIns(id){
 
 }
 
+function op(){
+document.getElementById('sidebar').style.transform="translateX(-300px)";
+document.getElementById('open').style.display="block";
+document.getElementById('close').style.display="none";
+}
+
+
+function cl(){
+document.getElementById('sidebar').style.transform="translateX(20px)";
+document.getElementById('open').style.display="none";
+document.getElementById('close').style.display="block";
+}

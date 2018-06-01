@@ -7,8 +7,8 @@
  
 		<nav>
 			<ul>
-				<li class="../users/home.php">
-					<a href="#"><span class="icon-rocket"></span>Usuarios<span class="caret icon-arrow-down6"></span></a>
+				<li class="submenu">
+					<a href="../users/home.php"><span class="icon-rocket"></span>Usuarios<span class="caret icon-arrow-down6"></span></a>
 					<ul class="children">
 						<li><a href="../users/agregar.php">Agregar<span class="icon-dot"></span></a></li>
 						<li><a href="../users/modificar.php">Modificar<span class="icon-dot"></span></a></li>
@@ -32,15 +32,26 @@
 					</ul>
 				</li>
 				<li class="submenu">
-					<a href="../periodos/eliminar.php"><span class="icon-rocket"></span>Periodo<span class="caret icon-arrow-down6"></span></a>
+					<a href="../periodos/home.php"><span class="icon-rocket"></span>Periodo<span class="caret icon-arrow-down6"></span></a>
 					<ul class="children">
 						<li><a href="../periodos/agregar.php">Agregar<span class="icon-dot"></span></a></li>
 						<li><a href="../periodos/modificar.php">Modificar<span class="icon-dot"></span></a></li>
 						<li><a href="../periodos/eliminar.php">Eliminar<span class="icon-dot"></span></a></li>
 					</ul>
 				</li>
-				<li><a href="#"><span class="icon-mail"></span>Salir</a></li>
+				<li><a href="../salir.php"><span class="icon-mail"></span>Salir</a></li>
 			</ul>
 		</nav>
       
        </header>
+       
+            <div id="sidebar">
+              <span>ENLACES DE INTERES</span>
+               <img id="close" src="../img/open.png" onclick="op();" alt="">
+               <img id="open" src="../img/open.png" onclick="cl();" alt="">
+               <div id="links">
+                <p><a target="_blank" href="https://www.w3schools.com"><span class="lk">w3schools.com</span></a></p>
+                <p><a target="_blank" href="http://www.itsch.edu.mx"><span class="lk">ITSCH</span></a></p>
+                <p><a target="_blank" href="https://www.geeksforgeeks.org"><span class="lk">geeksforgeeks</span></a></p>
+                </div>
+            </div>

@@ -38,7 +38,7 @@ require('../validaLogIn.php');
                <input type='text' name='user' id='user' value='$name'>
                <p><label for='pass'>Contraseña</label></p>
                <input type='password' name='pass' id='pass' value='$pass'>
-                <p><button name='modificar' onclick=\"modificarU('$id','$name','$pass')\">Modificar</button></p>";
+                <p><button class='btn-modificar' name='modificar' onclick=\"modificarU('$id','$name','$pass')\">Modificar</button></p>";
             
             
             
@@ -49,7 +49,7 @@ require('../validaLogIn.php');
                <input type='text' name='user' id='user'>
                <p><label for='pass'>Contraseña</label></p>
                <input type='password' name='pass' id='pass'>
-                <p><button name='guardar' onclick="agregarU('users')">Guardar</button></p>
+                <p><button class="btn-guardar" name='guardar' onclick="agregarU('users')">Guardar</button></p>
             
            <?php }?> 
 

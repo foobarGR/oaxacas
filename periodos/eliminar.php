@@ -69,7 +69,7 @@ require('../validaLogIn.php');
                                 $value['nPlan']
                                 ."</div>";
                             echo "<div class='col span_2_of_12'>";?>
-                            <button  onclick="eliminar('t_periodos',<?php echo $value['idPeriodo'];?>);">Eliminar</button>
+                            <button class="btn-eliminar" onclick="eliminar('t_periodos',<?php echo $value['idPeriodo'];?>);">Eliminar</button>
                                 
                                 
                         <?php    echo "</div>";

@@ -63,7 +63,7 @@ require('../validaLogIn.php');
                             <form action="agregar.php" method="post">
                             <input type="text" name="id" id="modificar" value="<?php echo $value['idPlan']; ?>">
                             <input type="text" name="nplan" id="modificar" value="<?php echo $value['nPlan']; ?>">
-                            <input type="submit"  name="modificar" value="Modificar">
+                            <input type="submit" class="btn-modificar" name="modificar" value="Modificar">
                             </form>
                                 
                         <?php    

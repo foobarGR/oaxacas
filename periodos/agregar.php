@@ -58,7 +58,7 @@ require('../validaLogIn.php');
                         }
                      
                     echo "</select>
-                <p><button name='guardar' onclick=\"modificarPe('$id','$inicio','$fin','$idPl');\">Modificar</button></p>";
+                <p><button class='btn-modificar' name='guardar' onclick=\"modificarPe('$id','$inicio','$fin','$idPl');\">Modificar</button></p>";
                    
                    
 
@@ -90,7 +90,7 @@ require('../validaLogIn.php');
                    
                    ?>
                </select>
-                <p><button name='guardar' onclick="agregarPeriodo();">Guardar</button></p>
+                <p><button class="btn-guardar" name='guardar' onclick="agregarPeriodo();">Guardar</button></p>
             
 <?php } ?>
 

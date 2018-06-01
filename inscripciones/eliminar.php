@@ -96,7 +96,7 @@ require('../validaLogIn.php');
                                 $value['fInicio']
                                 ."/.".$value['fFin']."</div>";
                         echo "<div class='col span_2_of_12'>";?>
-                        <button  onclick="eliminar('t_inscripciones',<?php echo $value['idIns'];?>);">Eliminar</button>
+                        <button class="btn-eliminar" onclick="eliminar('t_inscripciones',<?php echo $value['idIns'];?>);">Eliminar</button>
                                 
                                 
                         <?php    echo "</div>";

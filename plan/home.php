@@ -38,38 +38,25 @@ require('../validaLogIn.php');
        <section>
            
            <?php 
-               $query=$cnx->prepare("SELECT p.idPeriodo,p.fInicio,p.fFin,pl.nPlan,p.idPlan FROM t_periodos p JOIN t_plan_estudios pl ON p.idPlan=pl.idPlan;");
+               $query=$cnx->prepare("SELECT * FROM t_plan_estudios");
                 $query->execute();
                     
                         echo "<div class='section group'>";
-                        echo "<div class='header col span_3_of_12'>
-                                FECHA DE INICIO
-                                </div>
-                            <div class='header col span_3_of_12'>
-                                FECHA DE FIN
-                            </div>                      
-
-                            <div class='header col span_6_of_12'>
+                        echo "<div class='header col span_12_of_12'>
                                 PLAN DE ESTUDIOS
-                            </div>                      
-";
-
-                         echo "</div>";
+                                </div>
+                            
                         
+                            ";
+
+                         echo "</div>";                        
                     foreach($query as $key => $value){
                         
-                        echo "<div class='section group' id='".$value['idPeriodo']."'>";
-                        echo "<div class='col span_3_of_12'>".
-                                $value['fInicio']
-                                ."</div>
-                            <div class='col span_3_of_12'>".
-                                $value['fFin']
-                            ."</div>
-
-                            <div class='col span_6_of_12'>".
+                        echo "<div class='section group' id='".$value['idPlan']."'>";
+                        echo "<div class='col span_12_of_12'>".
                                 $value['nPlan']
-                            ."</div>";
-                        
+                                ."</div>";
+
                         
                         echo "</div>";
                         

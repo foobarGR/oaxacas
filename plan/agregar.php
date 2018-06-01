@@ -34,7 +34,7 @@ require('../validaLogIn.php');
             echo "<section class='login'>
                <p><label for='nplan'>Plan</label></p>
                <input type='text' name='nplan' id='nplan' value='$name'>
-                <p><button name='modificar' onclick=\"modificarPl('$id','$name')\">Modificar</button></p>";
+                <p><button class='btn-modificar' name='modificar' onclick=\"modificarPl('$id','$name')\">Modificar</button></p>";
             
             
             
@@ -45,7 +45,7 @@ require('../validaLogIn.php');
               <section class='login'>
                <p><label for='nplan'>Plan</label></p>
                <input type='text' name='nplan' id='nplan'>
-                <p><button name='guardar' onclick="agregar();">Guardar</button></p>
+                <p><button class="btn-guardar" name='guardar' onclick="agregar();">Guardar</button></p>
             
 <?php } ?>
        </section>

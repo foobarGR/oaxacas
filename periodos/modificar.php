@@ -74,7 +74,7 @@ require('../validaLogIn.php');
                             <input type="text" name="inicio" id="modificar" value="<?php echo $value['fInicio']; ?>">
                             <input type="text" name="fin" id="modificar" value="<?php echo $value['fFin']; ?>">
                             <input type="text" name="idPl" id="modificar" value="<?php echo $value['idPlan']; ?>">
-                            <input type="submit"  name="modificar" value="Modificar">
+                            <input class="btn-modificar" type="submit"  name="modificar" value="Modificar">
                             </form>
                                 
                                 

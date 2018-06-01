@@ -2,6 +2,7 @@ body {
 	font: 1em/150% Arial, Helvetica, sans-serif;
 
     background-image: url('../img/backschool.jpg');
+    text-align: center;
 }
 
 h1 {
@@ -67,7 +68,7 @@ footer { /*footer*/
 
 }
 
-.login input[type=text],input[type=password],select{
+.login input[type=text],input[type=password],select,input[type=number],input[type=date]{
     width: 80%;
     font-size: 20px;
     border-radius: 15px;
@@ -120,7 +121,7 @@ MEDIA QUERIES
     .login{
         width: 80%;
     }
-	
+
 }
 /* para 480px o menos */
 @media screen and (max-width: 480px) {
@@ -138,6 +139,7 @@ MEDIA QUERIES
     .login{
         width: 100%;
     }
+
 }
 
 /*DIVS RESPONSIVOS*/
@@ -222,7 +224,7 @@ MEDIA QUERIES
     border: 2px solid #651923;
     text-align: center;
     background-color: beige;
-    height: 30px;
+    height: 40px;
 }
 .header,#header{
     color:white;
@@ -238,9 +240,9 @@ MEDIA QUERIES
 .flotante{
     width: 90%;
     background-color: rgba(0,0,0,.7);
-    position: sticky;
-    top:100%;    
-    margin: auto;
+    position: absolute;
+    bottom:0px;    
+    margin-left: 5%;
     text-align: center;
     
 }
@@ -288,5 +290,119 @@ footer{
   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
+}
+
+.btn-eliminar {
+  background: #661231;
+  background-image: -webkit-linear-gradient(top, #661231, #ab0f2f);
+  background-image: -moz-linear-gradient(top, #661231, #ab0f2f);
+  background-image: -ms-linear-gradient(top, #661231, #ab0f2f);
+  background-image: -o-linear-gradient(top, #661231, #ab0f2f);
+  background-image: linear-gradient(to bottom, #661231, #ab0f2f);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+ 
+.btn-eliminar:hover {
+  background: #780000;
+  background-image: -webkit-linear-gradient(top, #780000, #d93434);
+  background-image: -moz-linear-gradient(top, #780000, #d93434);
+  background-image: -ms-linear-gradient(top, #780000, #d93434);
+  background-image: -o-linear-gradient(top, #780000, #d93434);
+  background-image: linear-gradient(to bottom, #780000, #d93434);
+  text-decoration: none;
+}
+
+.btn-guardar {
+
+    margin:10px 0px;
+background-image: -webkit-linear-gradient(top, #0f0, lightgreen);
+  background-image: -moz-linear-gradient(top, #0f0, lightgreen);
+  background-image: -ms-linear-gradient(top, #0f0, lightgreen);
+  background-image: -o-linear-gradient(top, #0f0, lightgreen);
+  background-image: linear-gradient(to bottom, #0f0, lightgreen);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+    font-size: 20px
+}
+
+
+/*SIDEBAR*/
+#sidebar {
+
+    /*section*/
+    width: 300px;
+    position: fixed;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .7);
+    border-radius: 10px;
+    right: -300px;
+    padding: 15px;
+    background-color: rgba(0,0,0,.6);
+}
+
+span.lk {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #7C101E;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+span.lk:hover {
+    background-color: darkgoldenrod;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 15px;
+
+}
+
+
+span label {
+    width: 20%;
+    font-size: 25px;
+    margin-bottom: 10%;
+
+}
+
+a:link {
+    text-decoration: none;
+
+}
+#open{
+    padding: 10px;
+    width:40%;
+    position:absolute;
+    left:calc(-40%);
+    display: none;
+    
+}
+#close{
+    padding: 10px;
+    width:40%;
+    position:absolute;
+    left:calc(-40%);
+    margin-top:calc(20%);
+    transform: rotate(180deg);
+
+}
+
+#sidebar>span{
+color:white;
+    font-size: 20px;
+    
+    
 }
 
