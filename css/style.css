@@ -1,0 +1,289 @@
+body {
+	font: 1em/150% Arial, Helvetica, sans-serif;
+
+    background-image: url('../img/backschool.jpg');
+}
+
+h1 {
+	font: bold 36px/100% Arial, Helvetica, sans-serif;
+}
+
+/************************************************************************************
+ESTRUCTURA
+*************************************************************************************/
+.wraper {
+	padding: 5px;
+	width: 960px;
+	height: auto;
+    margin: auto;
+        background-color: white;
+
+    
+}
+
+
+
+header{
+margin-bottom: 15px;
+}
+header>img {
+    width: 100%;
+}
+section{
+    width: 90%;
+    margin: auto;
+}
+
+footer { /*footer*/
+	clear: both;
+	padding: 15px;
+    background-color: lightsalmon;
+
+}
+
+/*LOGIN*/
+.error{
+    color:red;
+    font-size: 20px;
+}
+.wraperL {
+	width: 60%;
+    text-align: center;
+    position: fixed;
+    top:20%;
+    left:18%;
+}
+
+.login{
+    width: 40%;
+    margin: auto;
+    padding: 15px;
+    border:4px dashed darkred;
+    background-color: rgba(0,0,0,.8);
+    color:white;
+    box-shadow: 20px 20px 20px #000;
+
+}
+
+.login input[type=text],input[type=password]{
+    width: 80%;
+    font-size: 20px;
+    border-radius: 15px;
+    border:2px solid darkred;
+}
+
+
+.login input[type=submit]{
+    width: 50%;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: darkgoldenrod;
+    color:white;
+}
+.login input[type=submit]:hover{
+    transform:scale(1.2);
+    background-color: darkgoldenrod;
+    color:white;
+}
+
+.error{
+    display: none;
+    
+}
+
+
+/*USUARIOS*/
+.wraperU{
+    text-align: center;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* para 980px o menos */
+@media screen and (max-width: 980px) {
+	
+	.wraper {
+		width: 94%;
+	}
+	
+
+}
+
+/* para 700px o menos */
+@media screen and (max-width: 700px) {
+	header {
+		height: auto;
+	}
+    .login{
+        width: 80%;
+    }
+	
+}
+/* para 480px o menos */
+@media screen and (max-width: 480px) {
+	h1 {
+		font-size: 24px;
+	
+    }
+    
+    header {
+        margin-bottom: 5px;
+    }
+    .wraper, header, footer {
+        border: solid 1px #ccc;
+    }
+    .login{
+        width: 100%;
+    }
+}
+
+/*DIVS RESPONSIVOS*/
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 0%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWELVE  */
+.span_12_of_12 {
+	width: 100%;
+}
+
+.span_11_of_12 {
+  	width: 91.66%;
+}
+.span_10_of_12 {
+  	width: 83.33%;
+}
+
+.span_9_of_12 {
+  	width: 75%;
+}
+
+.span_8_of_12 {
+  	width: 66.66%;
+}
+
+.span_7_of_12 {
+  	width: 58.33%;
+}
+
+.span_6_of_12 {
+  	width: 50%;
+}
+
+.span_5_of_12 {
+  	width: 41.66%;
+}
+
+.span_4_of_12 {
+  	width: 33.33%;
+}
+
+.span_3_of_12 {
+  	width: 25%;
+}
+
+.span_2_of_12 {
+  	width: 16.66%;
+}
+
+.span_1_of_12 {
+  	width: 8.333%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 0%; }
+    
+    .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
+	width: 100%; 
+	}
+}
+
+.col{
+    border: 2px solid #651923;
+    text-align: center;
+    background-color: beige;
+    height: 30px;
+}
+.header{
+    color:white;
+    text-align: center;
+    background-color: black;
+}
+#modificar{
+    display: none;
+    
+}
+
+
+.flotante{
+    width: 90%;
+    background-color: rgba(0,0,0,.7);
+    position: sticky;
+    top:100%;    
+    margin: auto;
+    text-align: center;
+    
+}
+.flotante>div{
+    width: 20%;
+    display: inline-block;
+    margin:auto;
+    text-align: center;
+}
+
+.flotante>div>img{
+    width: 50%;
+    margin: auto;
+}
+
+.flotante>div>p{
+font-size: 24px;
+font-weight: bolder;
+color:white;
+}
+
+footer{
+    margin-top:15px
+}
+.btn-modificar {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+ 
+.btn-modificar:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
