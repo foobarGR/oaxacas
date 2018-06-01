@@ -14,8 +14,17 @@ switch($_GET['table']){
     break;
         
     case 't_inscripciones':
-    $query=$cnx->prepare("DELETE FROM t_inscripciones WHERE idIns=".$_GET['id']);
+    $id=(int)$_GET['id'];
+    $alumno=(int)$_GET['alumno'];
+    $grupo=(int)$_GET['grupo'];
+    $pago=(int)$_GET['pago'];
+    $plan=(int)$_GET['plan'];
+    $docente=(int)$_GET['docente'];
+    $periodo=(int)$_GET['periodo'];
+
+    $query=$cnx->prepare("UPDATE t_inscripciones set idAlumno=$alumno, idGrupo=$grupo, tPago=$pago, idPlan=$plan, idDocente=$docente, idPeriodo=$periodo WHERE idIns=$id");
     $query->execute();
+        
     break;
         
     case 't_plan_estudios':

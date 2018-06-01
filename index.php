@@ -11,7 +11,6 @@ if(isset($_POST['user'])){
     
     
     if ($query->rowCount()>0){
-        echo "yes";
         $_SESSION['user']=$user;
         $_SESSION['pass']=$pass;
         header("Location:users/home.php");

@@ -96,7 +96,16 @@ require('../validaLogIn.php');
                                 $value['fInicio']
                                 ."/.".$value['fFin']."</div>";
                         echo "<div class='col span_2_of_12'>";?>
-                        <button  onclick="modificarIns('t_inscripciones',<?php echo $value['idIns'];?>);">Modificar</button>
+                            <form action="agregar.php" method="post">
+                            <input type="text" name="id" id="modificar" value="<?php echo $value['idIns']; ?>">
+                            <input type="text" name="alumno" id="modificar" value="<?php echo $value['idAlumno']; ?>">
+                            <input type="text" name="grupo" id="modificar" value="<?php echo $value['idGrupo']; ?>">
+                            <input type="text" name="pago" id="modificar" value="<?php echo $value['tpago']; ?>">
+                            <input type="text" name="plan" id="modificar" value="<?php echo $value['idPlan']; ?>">
+                            <input type="text" name="docente" id="modificar" value="<?php echo $value['idDocente']; ?>">
+                            <input type="text" name="periodo" id="modificar" value="<?php echo $value['idPeriodo']; ?>">
+                            <input type="submit"  name="modificar" value="Modificar">
+                            </form>
                                 
                                 
                         <?php    echo "</div>";
